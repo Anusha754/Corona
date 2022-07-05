@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { TableRoutingModule } from './table-routing.module';
 import { TableComponent } from './table.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
-    TableComponent
+    TableComponent,
+    GridComponent
   ],
   imports: [
     CommonModule,
