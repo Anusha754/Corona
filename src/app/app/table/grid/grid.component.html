@@ -1,0 +1,201 @@
+<div class="container mt-2">
+    <h1>Report data</h1>
+    <br>
+    <b>
+        <div class="row">
+            <div class="col">Confirmed</div>
+            <div class="col">Recovered</div>
+            <div class="col">Active</div>
+            <div class="col">Deceased</div>
+            <div class="col">Total observation</div>
+            <div class="col">Hospital observation</div>
+            <div class="col">Home observation</div>
+            <div class="col">Hospital today</div>
+            <div class="col">District</div>
+    </div>
+    </b>
+   
+    <ng-container *ngFor="let dt of summary">
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Thiruvananthapuram.confirmed}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.recovered}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.active}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.deceased}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.total_obs}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.hospital_obs}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.home_obs}}</div>
+            <div class="col">{{dt.Thiruvananthapuram.hospital_today}}</div>
+            <div class="col">Thiruvanathapuram</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Kollam.confirmed}}</div>
+            <div class="col">{{dt.Kollam.recovered}}</div>
+            <div class="col">{{dt.Kollam.active}}</div>
+            <div class="col">{{dt.Kollam.deceased}}</div>
+            <div class="col">{{dt.Kollam.total_obs}}</div>
+            <div class="col">{{dt.Kollam.hospital_obs}}</div>
+            <div class="col">{{dt.Kollam.home_obs}}</div>
+            <div class="col">{{dt.Kollam.hospital_today}}</div>
+            <div class="col">Kollam</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Pathanamthitta.confirmed}}</div>
+            <div class="col">{{dt.Pathanamthitta.recovered}}</div>
+            <div class="col">{{dt.Pathanamthitta.active}}</div>
+            <div class="col">{{dt.Pathanamthitta.deceased}}</div>
+            <div class="col">{{dt.Pathanamthitta.total_obs}}</div>
+            <div class="col">{{dt.Pathanamthitta.hospital_obs}}</div>
+            <div class="col">{{dt.Pathanamthitta.home_obs}}</div>
+            <div class="col">{{dt.Pathanamthitta.hospital_today}}</div>
+            <div class="col">Pathanamthitta</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Alappuzha.confirmed}}</div>
+            <div class="col">{{dt.Alappuzha.recovered}}</div>
+            <div class="col">{{dt.Alappuzha.active}}</div>
+            <div class="col">{{dt.Alappuzha.deceased}}</div>
+            <div class="col">{{dt.Alappuzha.total_obs}}</div>
+            <div class="col">{{dt.Alappuzha.hospital_obs}}</div>
+            <div class="col">{{dt.Alappuzha.home_obs}}</div>
+            <div class="col">{{dt.Alappuzha.hospital_today}}</div>
+            <div class="col">Alappuzha</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Kottayam.confirmed}}</div>
+            <div class="col">{{dt.Kottayam.recovered}}</div>
+            <div class="col">{{dt.Kottayam.active}}</div>
+            <div class="col">{{dt.Kottayam.deceased}}</div>
+            <div class="col">{{dt.Kottayam.total_obs}}</div>
+            <div class="col">{{dt.Kottayam.hospital_obs}}</div>
+            <div class="col">{{dt.Kottayam.home_obs}}</div>
+            <div class="col">{{dt.Kottayam.hospital_today}}</div>
+            <div class="col">Kottayam</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Idukki.confirmed}}</div>
+            <div class="col">{{dt.Idukki.recovered}}</div>
+            <div class="col">{{dt.Idukki.active}}</div>
+            <div class="col">{{dt.Idukki.deceased}}</div>
+            <div class="col">{{dt.Idukki.total_obs}}</div>
+            <div class="col">{{dt.Idukki.hospital_obs}}</div>
+            <div class="col">{{dt.Idukki.home_obs}}</div>
+            <div class="col">{{dt.Idukki.hospital_today}}</div>
+            <div class="col">Idukki</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Ernakulam.confirmed}}</div>
+            <div class="col">{{dt.Ernakulam.recovered}}</div>
+            <div class="col">{{dt.Ernakulam.active}}</div>
+            <div class="col">{{dt.Ernakulam.deceased}}</div>
+            <div class="col">{{dt.Ernakulam.total_obs}}</div>
+            <div class="col">{{dt.Ernakulam.hospital_obs}}</div>
+            <div class="col">{{dt.Ernakulam.home_obs}}</div>
+            <div class="col">{{dt.Ernakulam.hospital_today}}</div>
+            <div class="col">Ernakulam</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Thrissur.confirmed}}</div>
+            <div class="col">{{dt.Thrissur.recovered}}</div>
+            <div class="col">{{dt.Thrissur.active}}</div>
+            <div class="col">{{dt.Thrissur.deceased}}</div>
+            <div class="col">{{dt.Thrissur.total_obs}}</div>
+            <div class="col">{{dt.Thrissur.hospital_obs}}</div>
+            <div class="col">{{dt.Thrissur.home_obs}}</div>
+            <div class="col">{{dt.Thrissur.hospital_today}}</div>
+            <div class="col">Thrissur</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Palakkad.confirmed}}</div>
+            <div class="col">{{dt.Palakkad.recovered}}</div>
+            <div class="col">{{dt.Palakkad.active}}</div>
+            <div class="col">{{dt.Palakkad.deceased}}</div>
+            <div class="col">{{dt.Palakkad.total_obs}}</div>
+            <div class="col">{{dt.Palakkad.hospital_obs}}</div>
+            <div class="col">{{dt.Palakkad.home_obs}}</div>
+            <div class="col">{{dt.Palakkad.hospital_today}}</div>
+            <div class="col">Palakkad</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Malappuram.confirmed}}</div>
+            <div class="col">{{dt.Malappuram.recovered}}</div>
+            <div class="col">{{dt.Malappuram.active}}</div>
+            <div class="col">{{dt.Malappuram.deceased}}</div>
+            <div class="col">{{dt.Malappuram.total_obs}}</div>
+            <div class="col">{{dt.Malappuram.hospital_obs}}</div>
+            <div class="col">{{dt.Malappuram.home_obs}}</div>
+            <div class="col">{{dt.Malappuram.hospital_today}}</div>
+            <div class="col">Malappuram</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Kozhikode.confirmed}}</div>
+            <div class="col">{{dt.Kozhikode.recovered}}</div>
+            <div class="col">{{dt.Kozhikode.active}}</div>
+            <div class="col">{{dt.Kozhikode.deceased}}</div>
+            <div class="col">{{dt.Kozhikode.total_obs}}</div>
+            <div class="col">{{dt.Kozhikode.hospital_obs}}</div>
+            <div class="col">{{dt.Kozhikode.home_obs}}</div>
+            <div class="col">{{dt.Kozhikode.hospital_today}}</div>
+            <div class="col">Kozhikode</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Wayanad.confirmed}}</div>
+            <div class="col">{{dt.Wayanad.recovered}}</div>
+            <div class="col">{{dt.Wayanad.active}}</div>
+            <div class="col">{{dt.Wayanad.deceased}}</div>
+            <div class="col">{{dt.Wayanad.total_obs}}</div>
+            <div class="col">{{dt.Wayanad.hospital_obs}}</div>
+            <div class="col">{{dt.Wayanad.home_obs}}</div>
+            <div class="col">{{dt.Wayanad.hospital_today}}</div>
+            <div class="col">Wayanad</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Kannur.confirmed}}</div>
+            <div class="col">{{dt.Kannur.recovered}}</div>
+            <div class="col">{{dt.Kannur.active}}</div>
+            <div class="col">{{dt.Kannur.deceased}}</div>
+            <div class="col">{{dt.Kannur.total_obs}}</div>
+            <div class="col">{{dt.Kannur.hospital_obs}}</div>
+            <div class="col">{{dt.Kannur.home_obs}}</div>
+            <div class="col">{{dt.Kannur.hospital_today}}</div>
+            <div class="col">Kannur</div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col">{{dt.Kasaragod.confirmed}}</div>
+            <div class="col">{{dt.Kasaragod.recovered}}</div>
+            <div class="col">{{dt.Kasaragod.active}}</div>
+            <div class="col">{{dt.Kasaragod.deceased}}</div>
+            <div class="col">{{dt.Kasaragod.total_obs}}</div>
+            <div class="col">{{dt.Kasaragod.hospital_obs}}</div>
+            <div class="col">{{dt.Kasaragod.home_obs}}</div>
+            <div class="col">{{dt.Kasaragod.hospital_today}}</div>
+            <div class="col">Kasaragod</div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">Total</div>
+          <div class="col">{{ total }}</div>
+          <div class="col"> {{ homeTotal }} </div>
+          <div class="col"> {{ hospitalTodayTotal }} </div>
+        </div>
+    </ng-container>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="tableToCSV()">Export</button>
+</div>
