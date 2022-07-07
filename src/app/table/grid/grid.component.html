@@ -1,17 +1,20 @@
 <div class="container mt-2">
     <h1>Report data</h1>
     <br>
-    <div class="row">
-            <div class="col"><h5>Confirmed</h5></div>
-            <div class="col"><h5>Recovered</h5></div>
-            <div class="col"><h5>Active</h5></div>
-            <div class="col"><h5>Deceased</h5></div>
-            <div class="col"><h5>Total observation</h5></div>
-            <div class="col"><h5>Hospital observation</h5></div>
-            <div class="col"><h5>Home observation</h5></div>
-            <div class="col"><h5>Hospital today</h5></div>
-            <div class="col"><h5>District</h5></div>
+    <b>
+        <div class="row">
+            <div class="col">Confirmed</div>
+            <div class="col">Recovered</div>
+            <div class="col">Active</div>
+            <div class="col">Deceased</div>
+            <div class="col">Total observation</div>
+            <div class="col">Hospital observation</div>
+            <div class="col">Home observation</div>
+            <div class="col">Hospital today</div>
+            <div class="col">District</div>
     </div>
+    </b>
+   
     <ng-container *ngFor="let dt of summary">
         <hr>
         <div class="row" >
@@ -181,7 +184,18 @@
             <div class="col">{{dt.Kasaragod.hospital_today}}</div>
             <div class="col">Kasaragod</div>
         </div>
+        <hr>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">Total</div>
+          <div class="col">{{ total }}</div>
+          <div class="col"> {{ homeTotal }} </div>
+          <div class="col"> {{ hospitalTodayTotal }} </div>
+        </div>
     </ng-container>
     <br>
-    <button type="button" class="btn btn-primary" (click)="export()">Export</button>
+    <button type="button" class="btn btn-primary" (click)="tableToCSV()">Export</button>
 </div>

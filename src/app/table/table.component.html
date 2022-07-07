@@ -169,7 +169,18 @@
           <td>{{dt.Kasaragod.hospital_today}}</td>
           <td>Kasaragod</td>
         </tr>
+        <tr></tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td>{{ total }}</td>
+          <td> {{ homeTotal }} </td>
+          <td> {{ hospitalTodayTotal }} </td>
+        </tr>
       </tbody>
     </table>
-    <button type="button" class="btn btn-primary" (click)="export()">Export</button>
+    <button type="button" class="btn btn-primary" (click)="tableToCSV()">Export</button>
     </div>
